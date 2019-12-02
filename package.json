@@ -1,0 +1,24 @@
+{
+  "name": "scrollingzoomsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dravod/scrollingzoomsite.git"
+  },
+  "author": "Justin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dravod/scrollingzoomsite/issues"
+  },
+  "homepage": "https://github.com/dravod/scrollingzoomsite#readme",
+  "dependencies": {
+    "create-react-app": "^3.2.0",
+    "react": "^16.12.0",
+    "yarn": "^1.19.2"
+  }
+}
