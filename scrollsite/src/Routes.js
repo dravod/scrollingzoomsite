@@ -5,24 +5,15 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import NavBar from "./components/Home/NavBar";
+import HomeScreen from "./containers/HomeScreen"
+import Footer from './containers/Footer'
 
 export default function Routes() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+        <NavBar/>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -33,10 +24,11 @@ export default function Routes() {
           <Route path="/users">
             <div />
           </Route>
-          <Route path="/">
-            <div />
+          <Route exact path="/">
+            <HomeScreen />
           </Route>
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );
