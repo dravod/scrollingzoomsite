@@ -10,7 +10,6 @@ export default class HomeScreen extends Component {
     render() { 
         return ( 
             <div>
-                {ProjectCarousel()}
                 <Slider/>
                 <FadeIn/>
                 <HomeBody/>
