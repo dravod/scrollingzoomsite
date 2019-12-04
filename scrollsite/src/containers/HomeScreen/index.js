@@ -1,9 +1,10 @@
 import React from 'react';
-import {Component} from 'react'
+import {Component} from 'react';
 import Slider from "../../components/Home/Slider";
-import HomeBody from "../../components/Home/HomeBody"
-import ProjectCarousel from '../../components/Carousel'
-import FadeIn from '../../components/FadeIn'
+import HomeBody from "../../components/Home/HomeBody";
+import ProjectCarousel from '../../components/Carousel';
+import FadeIn from '../../components/FadeIn';
+import ClickAndDragBoxes from '../../components/ClickAndDragBoxes';
 
 export default class HomeScreen extends Component {
     state = {  }
@@ -11,6 +12,7 @@ export default class HomeScreen extends Component {
         return ( 
             <div>
                 <Slider/>
+                <ClickAndDragBoxes/>
                 <FadeIn/>
                 <HomeBody/>
             </div>
