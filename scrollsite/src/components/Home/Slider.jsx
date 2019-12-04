@@ -6,6 +6,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Fade from 'react-reveal/Fade';
 
 
 export default class Slider extends Component {
@@ -14,6 +15,7 @@ export default class Slider extends Component {
     render() { 
         return (
             <div>
+            <Fade>
                 <div className="top-shadow"></div>
 
                 <OwlCarousel
@@ -52,6 +54,7 @@ export default class Slider extends Component {
                 </div>
             
             </OwlCarousel>
+            </Fade>
             </div>
           );
     }

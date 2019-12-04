@@ -4,19 +4,28 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col";
 import Image from 'react-bootstrap/Image';
+import Fade from "react-reveal/Fade";
+import Slide from 'react-reveal/Slide';
+import LightSpeed from 'react-reveal/LightSpeed';
+import Bounce from 'react-reveal/Bounce';
+import Roll from 'react-reveal/Roll';
+import Wobble from 'react-reveal/Wobble';
 
 export default class HomeBody extends Component {
     state = {  }
     render() { 
         return (  
             <div className='div'>
-                
+            
                 <Container className="container">
+                <LightSpeed right>
                     <Row mb='5'>
                         <Col text-center>
                             <h2>We'll Handle Any Problems and Solve Them</h2>
                         </Col>
                     </Row>
+                </LightSpeed>
+                <Fade>
                 <Row align-items-stretch>
                     <Col lg='4' lg={{order:2}}>
                         <div className="scaling-image h-100"><div className="frame h-100"><div className="feature-img-bg h-100" style={{backgroundImage: "url(images/industrial_feature_1.jpg)"}}></div></div></div>
@@ -54,8 +63,10 @@ export default class HomeBody extends Component {
                         </div>
                     </Col>
                 </Row>
+                </Fade>
                 
                     <Container>
+                    <Slide left>
                         <Row>
                             <Col md="6" lg="4" element-animate >
                                 <div className="media block-6 d-block text-center">
@@ -85,9 +96,10 @@ export default class HomeBody extends Component {
                                 </div>
                             </Col> 
                         </Row>
+                        </Slide>
                     </Container>
                 
-             
+                <Bounce bottom>
                     <div className="container">
                             <div className="row align-items-center mb-5">
                                 <div className="col-lg-7 order-md-2">
@@ -104,6 +116,7 @@ export default class HomeBody extends Component {
                                 </div>
                             </div>
                         </div>
+                </Bounce>
                     
                 </Container>
 
@@ -135,52 +148,79 @@ export default class HomeBody extends Component {
                             </Col>
                         </Row>
                     </Container>
+                    
                     <Container fluid>
+                    
                         <Row no-gutters>
+                            
                             <Col md='4' element-animate >
+                            <Roll left>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Ducting Design in Colorado</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_1.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
+                            </Roll>
                             </Col>
+                           
+                        
                             <Col md='4' element-animate>
+                            <Roll left>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Tanks Project In California</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_2.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
+                            </Roll>
                             </Col>
+                           
                             <Col md='4' element-animate>
+                            <Roll left>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Structural Design in New York</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_3.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
+                            </Roll>
                             </Col>
+                            
+                           
                             <Col md='4' element-animate>
+                            <Roll right>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Stacks Design</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_4.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
+                            </Roll>
                             </Col>
+                            
+                          
                             <Col md='4' element-animate>
+                            <Roll right>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Intercate Custom</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_5.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
+                            </Roll>
                             </Col>
+                            
+                            
                             <Col md='4' element-animate>
+                            <Roll right>
                                 <Link to="/project" className="link-thumbnail">
                                     <h3>Banker Design</h3>
                                     <span className="ion-plus icon"></span>
                                     <Image src="images/industrial_img_6.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                                 </Link>
+                                </Roll>
                             </Col>
+                            
                         </Row>
+                        
                     </Container>
+                    
                 </div>
             </div>
         )}
