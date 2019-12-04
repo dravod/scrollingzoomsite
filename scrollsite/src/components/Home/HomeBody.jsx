@@ -84,7 +84,7 @@ export default class HomeBody extends Component {
                     <div className="container">
                             <div className="row align-items-center mb-5">
                                 <div className="col-lg-7 order-md-2">
-                                    <div className="scaling-image"><div className="frame"><img src="images/industrial_featured_img_1.jpg" alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
+                                    <div className="scaling-image"><div className="frame"><img src="/images/industrial_featured_img_1.jpg" alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
                                 </div>
                                 <div className="col-md-5 pr-md-5 mb-5">
                                     <div className="block-41">
@@ -104,7 +104,7 @@ export default class HomeBody extends Component {
                     <div className="container">
                         <div className="row align-items-center mb-5">
                             <div className="col-lg-7 order-md-1">
-                                <div className="scaling-image"><div className="frame"><img src="images/industrial_featured_img_2.jpg" alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
+                                <div className="scaling-image"><div className="frame"><img src="/images/industrial_featured_img_2.jpg" alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
                             </div>
                             <div className="col-md-5 pl-md-5 mb-5 order-md-2">
                                 <div className="block-41">

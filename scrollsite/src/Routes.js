@@ -14,9 +14,6 @@ export default function Routes() {
     <Router>
       <div>
         <NavBar/>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
             <div />
@@ -25,7 +22,7 @@ export default function Routes() {
             <div />
           </Route>
           <Route exact path="/">
-            <HomeScreen />
+            <HomeScreen/>
           </Route>
         </Switch>
         <Footer/>
