@@ -1,20 +1,25 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col";
+import Image from 'react-bootstrap/Image';
 
 export default class HomeBody extends Component {
     state = {  }
     render() { 
         return (  
-            <div className="div">
-                <div className="container">
-                    <div className="row mb-5">
-                        <h2> cl Handle Any Probles and Solve Them</h2>
-                    </div>
-                <div className="row align-items-stretch">
-                    <div className="col-lg-4 order-lg-2">
+            <div className='div'>
+                
+                <Container className="container">
+                    <Row mb='5'>
+                        <h2>Handle Any Problems and Solve Them</h2>
+                    </Row>
+                <Row align-items-stretch>
+                    <Col lg='4' lg={{order:2}}>
                         <div className="scaling-image h-100"><div className="frame h-100"><div className="feature-img-bg h-100" style={{backgroundImage: "url(images/industrial_feature_1.jpg)"}}></div></div></div>
-                    </div>
-                    <div className="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
+                    </Col>
+                    <Col md="6" lg="4" feature-1-wrap d-md-flex flex-md-column lg={{order:1}} >
                         <div className="feature-1 d-md-flex">
                             <div className="align-self-center">
                                 <span className="ion ion-easel display-4 text-primary"></span>
@@ -29,7 +34,7 @@ export default class HomeBody extends Component {
                                 <p>Even the all-powerful Pointing has no control about the blind texts.</p>
                             </div>
                         </div>
-                    </div>
+                    </Col>
                     <div className="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
                         <div className="feature-1 d-md-flex">
                             <div className="align-self-center">
@@ -46,7 +51,7 @@ export default class HomeBody extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Row>
                 <div className="section bg-light">
                     <div className="container">
                         <div className="row">
@@ -98,7 +103,7 @@ export default class HomeBody extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Container>
 
                 <div className="section element-animate bg-light">
                     <div className="container">
@@ -121,60 +126,60 @@ export default class HomeBody extends Component {
 
 
                 <div className="section border-t pb-0">
-                    <div className="container">
-                        <div className="row justify-content-center mb-5 element-animate">
-                            <div className="col-md-8 text-center">
+                    <Container>
+                        <Row className='justify-content-center' mb='5' element-animate>
+                            <Col md='8' text-center>
                             <h2 className=" heading mb-4">Projects</h2>
                             <p className="mb-5 lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="container-fluid">
-                        <div className="row no-gutters">
-                            <div className="col-md-4 element-animate">
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container fluid>
+                        <Row no-gutters>
+                            <Col md='4' element-animate >
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Ducting Design in Colorado</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_1.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
-                            </div>
-                            <div className="col-md-4 element-animate">
+                            </Col>
+                            <Col md='4' element-animate>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Tanks Project In California</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_2.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
-                            </div>
-                            <div className="col-md-4 element-animate">
+                            </Col>
+                            <Col md='4' element-animate>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Structural Design in New York</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_3.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
-                            </div>
-                            <div className="col-md-4 element-animate">
+                            </Col>
+                            <Col md='4' element-animate>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Stacks Design</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_4.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
-                            </div>
-                            <div className="col-md-4 element-animate">
+                            </Col>
+                            <Col md='4' element-animate>
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Intercate Custom</h3>
                                 <span className="ion-plus icon"></span>
                                 <img src="images/industrial_img_5.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
-                            </div>
-                            <div className="col-md-4 element-animate">
+                            </Col>
+                            <Col md='4' element-animate>
                                 <Link to="/project" className="link-thumbnail">
                                     <h3>Banker Design</h3>
                                     <span className="ion-plus icon"></span>
-                                    <img src="images/industrial_img_6.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
+                                    <Image src="images/industrial_img_6.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
                                 </Link>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             </div>
         )}
