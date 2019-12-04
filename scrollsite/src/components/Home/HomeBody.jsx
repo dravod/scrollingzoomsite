@@ -13,7 +13,9 @@ export default class HomeBody extends Component {
                 
                 <Container className="container">
                     <Row mb='5'>
-                        <h2>Handle Any Problems and Solve Them</h2>
+                        <Col text-center>
+                            <h2>We'll Handle Any Problems and Solve Them</h2>
+                        </Col>
                     </Row>
                 <Row align-items-stretch>
                     <Col lg='4' lg={{order:2}}>
@@ -35,7 +37,7 @@ export default class HomeBody extends Component {
                             </div>
                         </div>
                     </Col>
-                    <div className="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
+                    <Col md='6' col-lg-4 feature-1-wrap d-md-flex flex-md-column lg={{order:3}} >
                         <div className="feature-1 d-md-flex">
                             <div className="align-self-center">
                                 <span className="ion ion-cube display-4 text-primary"></span>
@@ -50,12 +52,12 @@ export default class HomeBody extends Component {
                                 <p>Even the all-powerful Pointing has no control about the blind texts.</p>
                             </div>
                         </div>
-                    </div>
+                    </Col>
                 </Row>
-                <div className="section bg-light">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-6 col-lg-4 element-animate ">
+                
+                    <Container>
+                        <Row>
+                            <Col md="6" lg="4" element-animate >
                                 <div className="media block-6 d-block text-center">
                                     <div className="icon mb-3"><span className="ion-android-notifications text-primary"></span></div>
                                     <div className="media-body">
@@ -63,8 +65,8 @@ export default class HomeBody extends Component {
                                         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                                     </div>
                                 </div>  
-                            </div>
-                            <div className="col-md-6 col-lg-4 element-animate ">
+                            </Col>
+                            <Col md='6' lg='4' element-animate>
                                 <div className="media block-6 d-block text-center">
                                     <div className="icon mb-3"><span className="ion-heart text-primary"></span></div>
                                     <div className="media-body">
@@ -72,8 +74,8 @@ export default class HomeBody extends Component {
                                         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                                     </div>
                                 </div> 
-                            </div>
-                            <div className="col-md-6 col-lg-4 element-animate ">
+                            </Col>
+                            <Col md='6' lg='4' element-animate >
                                 <div className="media block-6 d-block text-center">
                                     <div className="icon mb-3"><span className="ion-flash text-primary"></span></div>
                                     <div className="media-body">
@@ -81,11 +83,11 @@ export default class HomeBody extends Component {
                                         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                                     </div>
                                 </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-                <div className="section element-animate">
+                            </Col> 
+                        </Row>
+                    </Container>
+                
+             
                     <div className="container">
                             <div className="row align-items-center mb-5">
                                 <div className="col-lg-7 order-md-2">
@@ -102,16 +104,16 @@ export default class HomeBody extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    
                 </Container>
 
-                <div className="section element-animate bg-light">
-                    <div className="container">
-                        <div className="row align-items-center mb-5">
-                            <div className="col-lg-7 order-md-1">
+                
+                    <Container>
+                        <Row align-items-center mb="5">
+                            <Col lg="7" md={{order:1}}>
                                 <div className="scaling-image"><div className="frame"><img src="/images/industrial_featured_img_2.jpg" alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
-                            </div>
-                            <div className="col-md-5 pl-md-5 mb-5 order-md-2">
+                            </Col>
+                            <Col md="5" pl-md="5" mb="5" md={{order:2}}>
                                 <div className="block-41">
                                     <h2 className="block-41-heading mb-5">We'll handle any intercate custom design</h2>
                                     <div className="block-41-text">
@@ -119,10 +121,9 @@ export default class HomeBody extends Component {
                                         <p><a href="#" className="readmore">Read More <span className="ion-android-arrow-dropright-circle"></span></a></p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </Col>
+                        </Row>
+                    </Container>
 
 
                 <div className="section border-t pb-0">
