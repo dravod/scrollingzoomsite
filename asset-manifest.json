@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/scrollingzoomsite/static/css/main.b100e6da.chunk.css",
+    "main.js": "/scrollingzoomsite/static/js/main.fd116f3e.chunk.js",
+    "main.js.map": "/scrollingzoomsite/static/js/main.fd116f3e.chunk.js.map",
+    "runtime-main.js": "/scrollingzoomsite/static/js/runtime-main.68b709fa.js",
+    "runtime-main.js.map": "/scrollingzoomsite/static/js/runtime-main.68b709fa.js.map",
+    "static/css/2.16aca965.chunk.css": "/scrollingzoomsite/static/css/2.16aca965.chunk.css",
+    "static/js/2.1a4ec153.chunk.js": "/scrollingzoomsite/static/js/2.1a4ec153.chunk.js",
+    "static/js/2.1a4ec153.chunk.js.map": "/scrollingzoomsite/static/js/2.1a4ec153.chunk.js.map",
+    "index.html": "/scrollingzoomsite/index.html",
+    "precache-manifest.dba716521bfcb8c14f1d654117d59d51.js": "/scrollingzoomsite/precache-manifest.dba716521bfcb8c14f1d654117d59d51.js",
+    "service-worker.js": "/scrollingzoomsite/service-worker.js",
+    "static/css/2.16aca965.chunk.css.map": "/scrollingzoomsite/static/css/2.16aca965.chunk.css.map",
+    "static/css/main.b100e6da.chunk.css.map": "/scrollingzoomsite/static/css/main.b100e6da.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68b709fa.js",
+    "static/css/2.16aca965.chunk.css",
+    "static/js/2.1a4ec153.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.fd116f3e.chunk.js"
+  ]
+}
