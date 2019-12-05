@@ -14,10 +14,16 @@ import Wobble from 'react-reveal/Wobble';
 import Image_1 from "../../assets/images/industrial_featured_img_1.jpg"
 import Image_2 from "../../assets/images/industrial_featured_img_2.jpg"
 
+import GroupImage1 from "../../assets/images/industrial_img_1.jpg"
+import GroupImage2 from "../../assets/images/industrial_img_2.jpg"
+import GroupImage3 from "../../assets/images/industrial_img_3.jpg"
+import GroupImage4 from "../../assets/images/industrial_img_4.jpg"
+import GroupImage5 from "../../assets/images/industrial_img_5.jpg"
+import GroupImage6 from "../../assets/images/industrial_img_6.jpg"
 export default class HomeBody extends Component {
     state = {  }
-    render() { 
-        return (  
+render() { 
+    return (  
             <div className='div'>
             
                 <Container className="container">
@@ -161,7 +167,7 @@ export default class HomeBody extends Component {
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Ducting Design in Colorado</h3>
                                 <span className="ion-plus icon"></span>
-                                <img src="images/industrial_img_1.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
+                                <img src={GroupImage1} alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
                             </Roll>
                             </Col>
@@ -172,7 +178,7 @@ export default class HomeBody extends Component {
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Tanks Project In California</h3>
                                 <span className="ion-plus icon"></span>
-                                <img src="images/industrial_img_2.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
+                                <img src={GroupImage2} alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
                             </Roll>
                             </Col>
@@ -182,7 +188,7 @@ export default class HomeBody extends Component {
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Structural Design in New York</h3>
                                 <span className="ion-plus icon"></span>
-                                <img src="images/industrial_img_3.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
+                                <img src={GroupImage3} alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
                             </Roll>
                             </Col>
@@ -193,7 +199,7 @@ export default class HomeBody extends Component {
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Stacks Design</h3>
                                 <span className="ion-plus icon"></span>
-                                <img src="images/industrial_img_4.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
+                                <img src={GroupImage4} alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
                             </Roll>
                             </Col>
@@ -204,7 +210,7 @@ export default class HomeBody extends Component {
                             <Link to="/project" className="link-thumbnail">
                                 <h3>Intercate Custom</h3>
                                 <span className="ion-plus icon"></span>
-                                <img src="images/industrial_img_5.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
+                                <img src={GroupImage5} alt="Free template by Free-Template.co" className="img-fluid"/>
                             </Link>
                             </Roll>
                             </Col>
@@ -215,7 +221,7 @@ export default class HomeBody extends Component {
                                 <Link to="/project" className="link-thumbnail">
                                     <h3>Banker Design</h3>
                                     <span className="ion-plus icon"></span>
-                                    <Image src="images/industrial_img_6.jpg" alt="Free template by Free-Template.co" className="img-fluid"/>
+                                    <Image src={GroupImage6} alt="Free template by Free-Template.co" className="img-fluid"/>
                                 </Link>
                                 </Roll>
                             </Col>
