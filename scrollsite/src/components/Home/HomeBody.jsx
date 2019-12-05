@@ -11,6 +11,9 @@ import Bounce from 'react-reveal/Bounce';
 import Roll from 'react-reveal/Roll';
 import Wobble from 'react-reveal/Wobble';
 
+import Image_1 from "../../assets/images/industrial_featured_img_1.jpg"
+import Image_2 from "../../assets/images/industrial_featured_img_2.jpg"
+
 export default class HomeBody extends Component {
     state = {  }
     render() { 
@@ -103,7 +106,7 @@ export default class HomeBody extends Component {
                     <div className="container">
                             <div className="row align-items-center mb-5">
                                 <div className="col-lg-7 order-md-2">
-                                    <div className="scaling-image"><div className="frame"><img src="/images/industrial_featured_img_1.jpg" alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
+                                    <div className="scaling-image"><div className="frame"><img src={Image_1} alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
                                 </div>
                                 <div className="col-md-5 pr-md-5 mb-5">
                                     <div className="block-41">
@@ -124,7 +127,7 @@ export default class HomeBody extends Component {
                     <Container>
                         <Row align-items-center mb="5">
                             <Col lg="7" md={{order:1}}>
-                                <div className="scaling-image"><div className="frame"><img src="/images/industrial_featured_img_2.jpg" alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
+                                <div className="scaling-image"><div className="frame"><img src={Image_2} alt="Free template by Free-Template.co" className="img-fluid"/></div></div>
                             </Col>
                             <Col md="5" pl-md="5" mb="5" md={{order:2}}>
                                 <div className="block-41">
