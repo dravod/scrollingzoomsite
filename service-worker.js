@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/scrollingzoomsite/precache-manifest.dba716521bfcb8c14f1d654117d59d51.js"
+  "/scrollingzoomsite/precache-manifest.b59cf857453905cba89acd135e926251.js"
 );
 
 self.addEventListener('message', (event) => {
