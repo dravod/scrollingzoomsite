@@ -28,7 +28,7 @@ export default class Slider extends Component {
                     style={{height:"100vh", width:"100vw"}}
                 >
            
-                <div class="item" style={{backgroundImage: "url('images/industrial_hero_1.jpg'", width:"100vw", height:"100vh", display:"flex", justifyContent:"center", alignItems:'center'}} >
+                <div class="item" style={{backgroundImage: `url(${require('../../assets/images/industrial_hero_1.jpg')}`, width:"100vw", height:"100vh", display:"flex", justifyContent:"center", alignItems:'center'}} >
                     <Container fluid >
                         <Row slider-text align-items-center justify-content-center>
                             <Col lg='12' text-center sm='12' element-animate>
@@ -40,7 +40,7 @@ export default class Slider extends Component {
                     </Container>
                 </div>
             
-                <div class="item" style={{backgroundImage: "url('images/industrial_hero_2.jpg')", width:"100vw", height:"100vh", display:"flex", justifyContent:"center", alignItems:'center'}}>
+                <div class="item" style={{backgroundImage: `url(${require('../../assets/images/industrial_hero_2.jpg')}`, width:"100vw", height:"100vh", display:"flex", justifyContent:"center", alignItems:'center'}}>
                     <Container fluid>
                         <Row slider-text align-items-center justify-content-center className="row">
                             <Col lg='12' text-center sm='12' element-animate>

@@ -28,7 +28,7 @@ export default class HomeBody extends Component {
                 <Fade>
                 <Row align-items-stretch>
                     <Col lg='4' lg={{order:2}}>
-                        <div className="scaling-image h-100"><div className="frame h-100"><div className="feature-img-bg h-100" style={{backgroundImage: "url(images/industrial_feature_1.jpg)"}}></div></div></div>
+                        <div className="scaling-image h-100"><div className="frame h-100"><div className="feature-img-bg h-100" style={{backgroundImage: `url(${require('../../assets/images/industrial_feature_1.jpg')}`}}></div></div></div>
                     </Col>
                     <Col md="6" lg="4" feature-1-wrap d-md-flex flex-md-column lg={{order:1}} >
                         <div className="feature-1 d-md-flex">
