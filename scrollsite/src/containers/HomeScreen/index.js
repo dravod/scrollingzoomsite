@@ -5,16 +5,16 @@ import HomeBody from "../../components/Home/HomeBody";
 import ProjectCarousel from '../../components/Carousel';
 import FadeIn from '../../components/FadeIn';
 import ClickAndDragBoxes from '../../components/ClickAndDragBoxes';
+import StickyScroll from '../../components/StickyScroll';
 
 export default class HomeScreen extends Component {
     state = {  }
     render() { 
         return ( 
             <div>
-                <Slider/>
-                <ClickAndDragBoxes/>
-                <FadeIn/>
-                <HomeBody/>
+           
+           <FadeIn/>
+            
             </div>
          );
     }

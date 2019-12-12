@@ -5,7 +5,9 @@ import posed from 'react-pose';
 const ClickBox = posed.div({
     pressable: true,
     init: { scale: 1 },
-    press: { scale: 10, color: '#f00'}
+    transition: { duration: 1000 },
+    press: {
+      transition: { duration: 1000 }, scale: 10, color: '#f00'}
   });
 const DragBox = posed.div({
 draggable: true,
