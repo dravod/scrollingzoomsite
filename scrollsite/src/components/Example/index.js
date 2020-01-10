@@ -36,7 +36,7 @@ const Sticky2 = () => (
                 <Timeline 
                   target={
                     <div className="heading">
-                      <h2>This is a cool heading</h2>
+                      <h2>This is cool!</h2>
                     </div>
                   }
                 >
