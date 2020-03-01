@@ -1,0 +1,30 @@
+#animation_image1 {
+    
+}
+
+.image-cropped-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* width of container */
+    height: 100%;
+}
+#croppingFrame{
+    display: flex;
+    position: relative;
+    align-self: center;
+    border-color: red;
+    border-width: 3em;
+    width: 1522px;
+    height: 440px;
+    overflow: hidden;
+}
+#croppedImage{
+    position: absolute;
+    left: -390px;
+    top: -560px;
+}
+
+.mainscreenshot{
+
+}

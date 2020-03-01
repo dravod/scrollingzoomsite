@@ -1,6 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
-import Example from '../../components/Example';
+import Main from '../../components/ScrollingAnimation';
 
 export default class HomeScreen extends Component {
     state = {  }
@@ -9,7 +9,7 @@ export default class HomeScreen extends Component {
             <div>
           
               
-                {Example()}
+                {Main()}
               
             </div>
          );
