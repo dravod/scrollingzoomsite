@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 
@@ -8,32 +8,54 @@ import AnimationImage2 from "../../assets/images/Image2.png"
 import "./index.css";
 
 
-const Sticky2 = () => (
+const IntroAnimation = () => {
+  return(
     <div>
       <div/>
       <Controller>
         <Scene
           triggerHook="onLeave"
-          duration={1000}
+          duration={15000}
           pin
         >
           {(progress) => (
             <div className="sticky">
               <Timeline totalProgress={progress} paused>
                 <Tween
-                    from={"image-cropped-frame", 0.5,{ x: '-0%', top: '0%', height:"20%", width: "20%", display:"flex"}}
-                    to={"image-cropped-frame", 0.5,{ x: '0%', top: '50%', height:"100%", width: "100%", display:"flex" }}
-                    
+                    from={{filter: "blur(0px)"}}
+                    to={{ y:"-150vh", filter: "blur(10px)" }}      
                 >
-                 
                   <div className="image-cropped-frame">
-                        <img id="animation_image1" src={AnimationImage1}/>
+                    <img className="mainscreenshot" src={AnimationImage1} />
                   </div>
-                  <div id="croppingFrame">
-                    <img id="croppedImage" src={AnimationImage1} />
-                  </div>
-                  
                 </Tween>
+                  <Tween
+                    from={{ y:"-150vh", display:"none" }}  
+                    to={{ y:"0vh", display:"block" }}      
+                  >
+                    <div className="image-cropped-frame">
+                      <img className="mainscreenshot" src={AnimationImage1} />
+                    </div>
+                </Tween>
+              </Timeline>
+              <Timeline totalProgress={progress} paused>
+                <Tween
+                  
+                    to={{x:"-20vw", y: '-50vh', display: "none" }}      
+                >
+                  <div id="croppingFrame-bottom">
+                    <img id="croppedImage-bottom" src={AnimationImage1} />
+                  </div>
+                </Tween>
+                <Tween
+                from={{x:"-20vw", y: '-50vh', display:"none"  }} 
+                to={{x:"0", y:"0", display:"block" }}      
+                >
+                  <div id="croppingFrame-bottom">
+                    <img id="croppedImage-bottom" src={AnimationImage1} />
+                  </div>
+                </Tween>
+                
             </Timeline>
             </div>
           )}
@@ -41,6 +63,6 @@ const Sticky2 = () => (
       </Controller>
       <div />
     </div>
-  );
+  )};
   
-  export default Sticky2;
+  export default IntroAnimation;

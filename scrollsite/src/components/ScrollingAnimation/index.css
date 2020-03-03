@@ -4,27 +4,45 @@
 
 .image-cropped-frame {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%; /* width of container */
     height: 100%;
 }
-#croppingFrame{
-    display: flex;
-    position: relative;
+#croppingFrame-bottom{
+    left: 390px;
+    top: 560px;
+    position: absolute;
     align-self: center;
     border-color: red;
     border-width: 3em;
     width: 1522px;
     height: 440px;
     overflow: hidden;
+    z-index: 1;
 }
-#croppedImage{
+#croppedImage-bottom{
+    position: absolute;
+    left: -390px;
+    top: -560px;
+}
+#croppingFrame-left{
+    left: 390px;
+    top: 560px;
+    position: absolute;
+    align-self: center;
+    border-color: red;
+    border-width: 3em;
+    width: 1522px;
+    height: 440px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#croppedImage-left{
     position: absolute;
     left: -390px;
     top: -560px;
 }
 
 .mainscreenshot{
-
+    position: absolute;
 }

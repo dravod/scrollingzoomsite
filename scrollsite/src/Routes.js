@@ -11,6 +11,5 @@ import HomeScreen from "./containers/HomeScreen"
 export default function Routes() {
   return (
             <HomeScreen/>
-  
   );
 }
